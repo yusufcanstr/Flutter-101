@@ -29,7 +29,10 @@ class TextLearn extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline5?.copyWith(color: Colors.lightBlue),
+            style: Theme.of(context)
+                .textTheme
+                .headline5
+                ?.copyWith(color: ProjectColors.welcomeColor),
           ),
         ],
       )),
@@ -46,4 +49,8 @@ class ProjectStyles {
       letterSpacing: 2,
       fontSize: 17,
       fontWeight: FontWeight.w600);
+}
+
+class ProjectColors {
+  static Color welcomeColor = Colors.red;
 }
