@@ -11,7 +11,20 @@ class ButtonLearn extends StatelessWidget {
       ),
       body: Column(
         children: [
-          TextButton(onPressed: () {}, child: Text("Button Tıkla")),
+          TextButton(
+              onPressed: () {},
+              child: Text(
+                "Button Tıkla",
+                style: Theme.of(context).textTheme.subtitle2,
+              ),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.resolveWith((states) {
+                  if (states.contains(MaterialState.pressed)) {
+                    return Colors.black45;
+                  }
+                  return Colors.red;
+                }),
+              )),
           ElevatedButton(
               onPressed: (() {}), child: Text("Elevated Button Tıkla")),
           IconButton(
@@ -21,10 +34,21 @@ class ButtonLearn extends StatelessWidget {
             child: const Icon(Icons.add),
           ),
           OutlinedButton(
-              onPressed: (() {}), child: const Text("Outline Button")),
-              InkWell(onTap: (() {
-                
-              }), child: const Text("Bir ögeyi tıklanabilir yapar !"),)
+              style: OutlinedButton.styleFrom(
+                  backgroundColor: Colors.blueAccent,
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(10)),
+                  
+              onPressed: (() {}),
+              child: const Text("Out")),
+          InkWell(
+            onTap: (() {}),
+            child: const Text("Bir ögeyi tıklanabilir yapar !"),
+          ),
+          Container(
+            height: 200,
+            color: Colors.black,
+          )
         ],
       ),
     );
