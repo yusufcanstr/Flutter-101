@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:information_card/101/container_sized_box_learn.dart';
+import 'package:information_card/101/scaffold_learn.dart';
 import 'package:information_card/101/text_learn.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: ContainerSizedBoxLearn(),
+      home: ScaffoldLearnView(),
     );
   }
 }
