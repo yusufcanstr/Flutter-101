@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:information_card/101/app_bar.dart';
-import 'package:information_card/101/button_learn.dart';
-import 'package:information_card/101/container_sized_box_learn.dart';
-import 'package:information_card/101/scaffold_learn.dart';
-import 'package:information_card/101/text_learn.dart';
+import 'package:information_card/101/icon_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +20,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: const AppBarLearnView(),
+      home: const IconViewLearn(),
     );
   }
 }
