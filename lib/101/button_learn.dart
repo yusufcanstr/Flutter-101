@@ -38,7 +38,6 @@ class ButtonLearn extends StatelessWidget {
                   backgroundColor: Colors.blueAccent,
                   shape: const CircleBorder(),
                   padding: const EdgeInsets.all(10)),
-                  
               onPressed: (() {}),
               child: const Text("Out")),
           InkWell(
@@ -48,7 +47,24 @@ class ButtonLearn extends StatelessWidget {
           Container(
             height: 200,
             color: Colors.black,
-          )
+          ),
+          const SizedBox(
+            height: 12,
+          ),
+          ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.black,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(20)))),
+              onPressed: (() {}),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                    top: 10, bottom: 10, right: 40, left: 40),
+                child: Text(
+                  "Place Holder",
+                  style: Theme.of(context).textTheme.headline5,
+                ),
+              ))
         ],
       ),
     );
