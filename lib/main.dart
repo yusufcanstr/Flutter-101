@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:information_card/101/app_bar.dart';
 import 'package:information_card/101/button_learn.dart';
 import 'package:information_card/101/container_sized_box_learn.dart';
 import 'package:information_card/101/scaffold_learn.dart';
@@ -17,10 +18,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: ButtonLearn(),
+      theme: ThemeData.dark().copyWith(
+          appBarTheme: AppBarTheme(
+        centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      )),
+      home: const AppBarLearnView(),
     );
   }
 }
