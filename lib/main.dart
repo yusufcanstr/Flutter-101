@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:information_card/101/color_learn.dart';
 import 'package:information_card/101/icon_learn.dart';
 
 void main() {
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: const IconViewLearn(),
+      home: const ColorLearn(),
     );
   }
 }
