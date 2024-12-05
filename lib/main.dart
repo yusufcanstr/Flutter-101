@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:information_card/101/custom_widget_learn.dart';
 import 'package:information_card/101/image_learn.dart';
 import 'package:information_card/demos/note_demos_view.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       )),
-      home: const NoteScreenView(),
+      home: CustomWidget(),
     );
   }
 }
