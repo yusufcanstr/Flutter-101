@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:information_card/101/custom_widget_learn.dart';
 import 'package:information_card/101/image_learn.dart';
+import 'package:information_card/101/indicator_learn.dart';
 import 'package:information_card/demos/note_demos_view.dart';
 
 void main() {
@@ -17,12 +18,13 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
+          progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
           appBarTheme: AppBarTheme(
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      )),
-      home: CustomWidget(),
+            centerTitle: true,
+            backgroundColor: Colors.transparent,
+            elevation: 0,
+          )),
+      home: const IndicatorLearn(),
     );
   }
 }
