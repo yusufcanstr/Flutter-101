@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:information_card/101/custom_widget_learn.dart';
-import 'package:information_card/101/image_learn.dart';
-import 'package:information_card/101/indicator_learn.dart';
-import 'package:information_card/demos/note_demos_view.dart';
+import 'package:information_card/101/list_title_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +21,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const IndicatorLearn(),
+      home: const ListTileLearn(),
     );
   }
 }
