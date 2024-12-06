@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:information_card/101/column_row_learn.dart';
-import 'package:information_card/101/list_title_learn.dart';
+import 'package:information_card/demos/stack_demo_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const ColumnRowLearn(),
+      home: const StackDemoView(),
     );
   }
 }
