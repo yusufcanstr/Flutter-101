@@ -6,7 +6,7 @@ class ListTileLearn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text("List Title Learn"),),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(children: [

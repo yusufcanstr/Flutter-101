@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:information_card/101/column_row_learn.dart';
 import 'package:information_card/101/list_title_learn.dart';
 
 void main() {
@@ -14,14 +15,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData.light().copyWith(
           progressIndicatorTheme: ProgressIndicatorThemeData(color: Colors.red),
           appBarTheme: AppBarTheme(
             centerTitle: true,
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const ListTileLearn(),
+      home: const ColumnRowLearn(),
     );
   }
 }
