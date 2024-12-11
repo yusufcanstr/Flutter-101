@@ -14,10 +14,7 @@ class StackDemoView extends StatelessWidget {
         backgroundColor: Colors.pink.shade400,
         title: Text(
           "Stack Demo View",
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              ?.copyWith(color: Colors.black),
+          style: Theme.of(context).textTheme.headline6?.copyWith(color: Colors.black),
         ),
       ),
       body: Column(
