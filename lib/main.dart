@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:information_card/demos/stack_demo_view.dart';
+import 'package:information_card/101/statefull_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const StackDemoView(),
+      home: const StatefulLearn(),
     );
   }
 }
