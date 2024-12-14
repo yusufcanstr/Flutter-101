@@ -1,14 +1,32 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 class ColorDemosView extends StatefulWidget {
-  const ColorDemosView({super.key});
-
+  const ColorDemosView({super.key, required this.initialColor});
+  final Color? initialColor;
   @override
   State<ColorDemosView> createState() => _ColorDemosViewState();
 }
 
 class _ColorDemosViewState extends State<ColorDemosView> {
-  Color? _backgroundColor = Colors.transparent;
+  Color? _backgroundColor;
+
+  @override
+  void initState() {
+    super.initState();
+    _backgroundColor = widget.initialColor ?? Colors.transparent;
+  }
+
+  @override
+  void didUpdateWidget(covariant ColorDemosView oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    //print(oldWidget.initialColor != _backgroundColor);
+    inspect(widget);
+    if (widget.initialColor != _backgroundColor && widget.initialColor != null) {
+      changeBackgroundColor(widget.initialColor!);
+    }
+  }
 
   void changeBackgroundColor(Color color) {
     setState(() {
