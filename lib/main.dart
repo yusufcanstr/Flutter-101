@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:information_card/101/text_field_learn.dart';
-
-import '101/statefull_life_cycle_learn.dart';
+import 'demos/color_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +21,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const TextFieldLearn(),
+      home: const ColorDemosView(),
     );
   }
 }
