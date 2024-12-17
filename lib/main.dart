@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'demos/my_collections_demos.dart';
+import '101/navigation_learn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const MyCollectionsDemos(),
+      home: const NavigationLearn(),
     );
   }
 }
