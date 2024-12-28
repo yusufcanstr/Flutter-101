@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:information_card/202/model_learn_view.dart';
 import 'package:information_card/202/tab_learn.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.transparent,
             elevation: 0,
           )),
-      home: const TabLearn(),
+      home: const ModelLearnView(),
     );
   }
 }
